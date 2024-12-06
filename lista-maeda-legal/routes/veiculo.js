@@ -4,16 +4,6 @@ const express = require('express');
 // função do express para manipular as rotas
 const rotas = express.Router();
 
-
-// GET
-// rota para acesar o método GET para veículo
-rotas.get('/', (req, res) => {
-  res.status(200).send({
-    mensagem: 'Você acessou a rota raiz de veículo.'
-  });
-})
-
-
 // POST
 // rota para acesar o método POST para cliente
 rotas.post('/', (req, res) => {
